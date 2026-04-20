@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+body {
+    background-color: #AAE5A4;
+}
+
+a {
+    color: #009;
+    text-decoration: none;
+    font-family: Verdana,  sans-serif;
+    font-size: 12px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    min-height: max-content;
+    text-align: center;
+}
+
+input{
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px 15px;
+}
