@@ -1,0 +1,73 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    padding: 40px;
+    text-align: center;
+}
+
+header>h1 {
+    font: normal normal bold 7vw "Arial", sans-serif;
+}
+
+header>p {
+    font-weight: lighter;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+
+}
+
+div.girassol {
+    background: url(images/background001.jpg);
+}
+
+div.papel {
+    background: url(images/background002.jpg);
+}
+
+div.background {
+
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+div {
+    width: 100%;
+    height: 500px;
+}
+
+div.estrofe {
+    position: relative;
+}
+
+main p {
+    position: absolute;
+
+    left: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    padding: 20px;
+    font-size: 2vw;
+    
+}
+
+main p.transparente {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+footer {
+
+}
