@@ -1,6 +1,23 @@
+@font-face {
+    font-family: 'PassionOne';
+    src: url(fonts/PassionOne-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'PatrickHand';
+    src: url(fonts/PatrickHand-Regular.ttf) format('truetype');
+}
+
+:root {
+    --font1: Verdana, Geneva, Taoma, sans-serif;
+    --font2: 'PassionOne', cursive;
+    --font3: 'PatrickHand', cursive;
+}
+
 * {
     margin: 0px;
     padding: 0px;
+    font-family: var(--font1);
 }
 
 header {
@@ -11,7 +28,9 @@ header {
 }
 
 header>h1 {
-    font: normal normal bold 7vw "Arial", sans-serif;
+    /* font: normal normal bold 7vw "Arial", sans-serif; */
+    font-family: var(--font2);
+    font-size: 7vw;
 }
 
 header>p {
@@ -23,8 +42,12 @@ a {
     text-decoration: none;
 }
 
-main {
+a:hover {
+    text-decoration: underline;
+}
 
+body {
+    min-height: 100vh;
 }
 
 div.girassol {
@@ -44,7 +67,8 @@ div.background {
 
 div {
     width: 100%;
-    height: 500px;
+    height: 800px;
+    padding: 50px;
 }
 
 div.estrofe {
@@ -59,14 +83,15 @@ main p {
     transform: translateY(-50%);
 
     padding: 20px;
-    font-size: 2.5vw;
+    font-family: var(--font3);
+    font-size: 4vw;
     
     
 }
 
 main p.transparente {
     color: white;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(40, 40, 40, 0.5);
 }
 
 footer {
