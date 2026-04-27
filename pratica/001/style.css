@@ -1,0 +1,91 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor0: white;
+    --cor1: #65A173;
+    --cor2: #3D665D;
+}
+
+header {
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+}
+
+header>h1 {
+    font-size: 50px;
+    padding: 20px;
+}
+
+header>nav {
+    display: flex;
+    margin-top: 10px;
+    padding: 0%;
+    background: linear-gradient(to top, var(--cor2), transparent);
+    width: 100%;
+}
+
+header a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+    padding: 10px;
+}
+
+header a:hover {
+    color: lightgray;
+    background-color: var(--cor2);
+}
+
+footer {
+    background-color: var(--cor1);
+    color: var(--cor0);
+    text-align: center;
+    padding: 10px;
+
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor0);
+    font-weight: bold;
+}
+
+section {
+    position: relative;
+    background-color: lightgray;
+}
+
+section.imagem {
+    background-image: url(img/fundo1.png);
+    background-attachment: fixed;
+    background-size: cover;
+    box-shadow: inset 0px 0px 10px 5px rgba(0, 0, 0, 0.473);
+    height: 400px;
+}
+
+main p {
+    padding: 30px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 20px;
+}
+
+section.imagem p {
+    position: absolute;
+    background-color: rgba(39, 39, 39, 0.897);
+    color: white;
+
+    width: 50%;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
