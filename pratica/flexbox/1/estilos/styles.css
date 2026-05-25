@@ -1,0 +1,48 @@
+@charset 'UTF-8';
+
+:root {
+    --cor0: #a3c7ea;
+    --cor1: #5db9ff;
+    --cor2: #008dfc;
+    --cor3: #464646;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: var(--cor0);
+}
+
+div#logo {
+    background-image: url('../imagens/gem.png');
+    background-size: cover;
+    width: 100px;
+    height: 110px;
+
+    display: block;
+    margin: auto;
+}
+
+nav {
+    background-color: var(--cor3);
+
+    display: flex;
+    flex-flow: column nowrap
+}
+
+nav > a {
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+    padding: 10px;
+    font-size: 20px;
+}
+
+nav > a:hover {
+    background-color: gray;
+}
