@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu flexbox</title>
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-queries.css">
 </head>
-<body>
+<body onresize="atualizarTamanho()">
     <header>
         <h1>Meu site</h1>
+        <span id="botaoMenu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav id="menu">
             <a href="#">Opção 1</a>
             <a href="#">Opção 2</a>
@@ -24,5 +27,23 @@
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni minima blanditiis illum non amet ullam, aperiam natus, repellendus minus rem debitis quaerat eius obcaecati fuga eos dolorum. Cum, quasi suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni minima blanditiis illum non amet ullam, aperiam natus, repellendus minus rem debitis quaerat eius obcaecati fuga eos dolorum. Cum, quasi suscipit! Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni minima blanditiis illum non amet ullam, aperiam natus, repellendus minus rem debitis quaerat eius obcaecati fuga eos dolorum. Cum, quasi suscipit!</p>
         </article>
     </main>
+
+    <script>
+        function clickMenu() {
+            if (menu.style.display == "flex") {
+                menu.style.display = "none"
+            } else {
+                menu.style.display = "flex"
+            }
+        }
+
+        function atualizarTamanho() {
+            if (window.innerWidth >= 600) {
+                menu.style.display = "flex" 
+            } else {
+                menu.style.display = "none"
+            }
+        }
+    </script>
 </body>
 </html>

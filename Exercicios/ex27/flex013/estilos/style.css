@@ -18,6 +18,10 @@ header {
     align-items: center;
 }
 
+#botaoMenu {
+    display: none;
+}
+
 nav {
     display: flex;
     flex-flow: row nowrap;
