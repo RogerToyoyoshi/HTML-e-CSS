@@ -1,0 +1,11 @@
+@charset 'UTF-8';
+
+@media screen and (min-width: 768px) {
+    nav {
+        flex-flow: row nowrap;
+    }
+
+    nav > a {
+        flex: 1 0 150px;
+    }
+}

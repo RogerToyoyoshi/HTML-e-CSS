@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu"/>
+</head>
+<body onresize="atualizarTamanho()">
+    <header>
+        <h1>Título de teste</h1>
+        <span id="botaoMenu" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+        <nav id="menu">
+            <a href="#">Botão 1</a>
+            <a href="#">Botão 2</a>
+            <a href="#">Botão 3</a>
+            <a href="#">Botão 4</a>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Conteúdos flex</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora, excepturi quis non nam ad placeat commodi consequatur a ex natus doloribus voluptatibus magnam voluptatum tenetur vero iure. Magni, eaque commodi?</p>
+        </section>
+        <section class="media-text">
+            <div class="media">
+                <img src="imagens/pato.jpg" alt="pato">
+            </div>
+            <div class="text">
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Est facilis, cumque, consectetur repellendus dolore dolorum minima, natus voluptatem nobis voluptates neque ipsa magnam minus in quibusdam? Quaerat amet nesciunt dolor?</p>
+            </div>
+        </section>
+        <section>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga rerum minima modi voluptates expedita provident itaque at incidunt quibusdam. Architecto similique quas soluta quaerat itaque cum voluptatibus dolor quibusdam incidunt. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Molestias similique illo amet perspiciatis delectus quis cum, blanditiis expedita dolor fugiat natus voluptatum. Dolor, inventore odio! Iusto esse et officiis illo!</p>
+        </section>
+    </main>
+    <script>
+        function atualizarTamanho() {
+            if (window.innerWidth > 768) {
+                menu.style.display = "flex"
+                botaoMenu.style.display = "none"
+            } else {
+                menu.style.display = "none"
+                botaoMenu.style.display = "block"
+            }
+        }
+
+        function clickMenu() {
+            if (menu.style.display == "flex") {
+                menu.style.display = "none"
+            }else{
+                menu.style.display = "flex"
+            }
+        }
+    </script>
+</body>
+</html>
