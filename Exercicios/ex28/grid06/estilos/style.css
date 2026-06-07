@@ -1,0 +1,25 @@
+@charset 'UTF-8';
+
+.container {
+    display: grid;
+    grid-template: repeat(3,100px) / repeat(4,1fr);
+    gap: 1px;
+}
+
+.caixa1 {
+    grid-area: 1/1/2/5;
+
+    border: solid black 1px;
+}
+
+.caixa2 {
+    grid-area: 2/1/4/3;
+
+    border: solid black 1px;
+}
+
+.caixa3 {
+    grid-area: 2/3/4/5;
+
+    border: solid black 1px;
+}
